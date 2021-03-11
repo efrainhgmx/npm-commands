@@ -16,7 +16,7 @@ Aquí los comando que necesitas saber para manejar **npm** como un experto.
 
 `$ npm init -y` // Crea un package.json con los datos vacios o los configurados por el usuario dentro del proyecto.
 
-`$ npm set init.author.email "me@email.com"` // Deja configurado.
+`$ npm set init.author.email "me@email.com"` // Deja configurado un mail para los proyectos.
 
 `$ npm set init.author.name "Tu nombre"` // Guarda el nombre del autor para futuros proyectos.
 
