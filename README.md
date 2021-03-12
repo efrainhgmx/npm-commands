@@ -46,3 +46,53 @@ Las dependencias deben ser instaladas en la carpeta raíz del proyecto.
 `$ npm install package@<version>` // Instala la dependencia en una versión en especifico.
 
 `$ npm install npm@latest`  // Actualiza la dependencia a la ultima versión disponible.
+
+
+### Actualizar y eliminar.
+
+`$ npm outdate`  // Nos muestra si se encuentran los paquetes y además nos indica la ultima versión disponible de los paquetes.
+
+`$ npm udpate`  // Actualiza los paquetes que se tengan desactualizados.
+
+`$ npm install package@latest` // Podemos actualizar un paquete en especifico a su versión más reciente.
+
+`$ npm uninstall package` // Podemos eliminar un paquete en especifico.
+
+`$ npm unistall package --no-save` // Nos permite desinstalar o eliminar el paquete pero sin eliminarlo del package.json pero si de node_moduls.
+
+
+### Símbolos de ^ y ~
+![Simbols](./img/simbols.png)
+
+### Ejecutar Tarea (script)
+
+`$ npm run <script-name>` // Ejecuta el script que cremos dentro del package.json, scripts.
+
+### Solución de Problemas
+
+Uno de los problemas que podemos toparnos en la construcción de proyectos, es que nuestros archivos de **node_moduls** no están correctamente instaladas o tengamos una versión anterior. 
+
+Una forma de solucionarlo es eliminar la carpeta **node_moduls** o ejecutar un comando que nos va a dar seguridad de limpiar ese cache que pueda existir.
+
+`$ npm cache clean -f || $ npm cache clean --force` // Elimina la cache.
+
+`$ npm cache verify` // Con esto podemos ver si ya se ha eliminado el cache y que todas las instalaciones de nuestros recursos van a ir a servidores NPM.
+
+### Seguridad
+
+Podemos verificar si tenemos algún problema de seguridad usando algunos de estos comandos.
+
+`$ npm audit` // Muestra las vulnerabilidades y si estos son de alto nivel.
+
+`$ npm adudit --json ` // Genera el reporte en formato JSON.
+
+`$ npm audit fix` // Actualiza todas las dependencias a su ultima versión para evitar vulnerabilidades.
+
+### Probar nuestro paquete npm localmente.
+
+`$ npm link` // Esto nos creara un enlace simbólico en la carpeta global (.npm-global) que se vincula al paquete o proyecto donde se ejecutó el comando. El nombre de este enlace simbólico donde se ejecutó el comando. El nombre de este enlace simbólico se toma el campo "name" del package.json. Lo recomendado es que el valor de "name" inicie con un @.
+**Ejemplo: "name:" "@boogst/project-name**"
+
+`$ npm link "@boogst/project-name"`  // Si queremos usar el paquete anterior en algún proyecto debemos referenciarlo con este comando. Recuerda que debes estar ubicado en el proyecto "nuevo" que quieres imlementar ese paquete.
+
+`$ npm unlink "@boogst/project-name"` // Este comando nos permite deslinkear el paquete.
