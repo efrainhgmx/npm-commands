@@ -4,6 +4,8 @@ JavaScript es un lenguaje que fue diseñado para dar interactividad a la web, de
 
 Para poder trabajar con Node, es necesario ir implementando modulos según nuestro proyecto lo requiera, es ahí donde entra **npm**.
 
+**NOTA:** Para poder usar npm es necesario tener instalado Node JS https://nodejs.org/es/
+Para verificar esto, puedes escribir `$ node -v` para ver si este está instalado y cual es versión. 
 ## ¿Qué es NPM?
 
 **Node Package Manager** es un gestor de manejo de paquetes escritos en JavaScript lo cual **npm** nos permite obtener cualquier librería de JS con una sola linea de código en nuestro entorno de trabajo. 
