@@ -96,3 +96,17 @@ Podemos verificar si tenemos algún problema de seguridad usando algunos de esto
 `$ npm link "@boogst/project-name"`  // Si queremos usar el paquete anterior en algún proyecto debemos referenciarlo con este comando. Recuerda que debes estar ubicado en el proyecto "nuevo" que quieres imlementar ese paquete.
 
 `$ npm unlink "@boogst/project-name"` // Este comando nos permite deslinkear el paquete.
+
+
+### Publicar en NPM.
+
+`$ npm adduser` // Permite agregar un usuario de npm.
+
+`$ npm login` // Nos permite iniciar sesión.
+
+`$ npm publish` // Para publicar un proyecto en npm. Recuerda que debes estar ubicado en la carpeta raíz del proyecto.
+
+`$ npm unpublish -f` // Para des publicar un paquete. Recuerda que debes estar en la carpeta raíz del proyecto.
+
+
+`$ npm version <major | minor | patch>` // Nos permite actualizar la versión de nuestro paquete.
