@@ -1,5 +1,15 @@
 #  Comandos de NPM 
 
+## Configurar CRLF a LF en VSCode en Windows
+
+Ve a **File > Preferences > Settings**, busca **settings.json** en el campo de busqueda y da click en editar **settings.json**.
+
+Agrega la siguiente linea de código en tu configuración para dejar **LF** como predefinido.
+
+```json
+"files.eol": "\n"
+```
+
 JavaScript es un lenguaje que fue diseñado para dar interactividad a la web, del lado del cliente **(Frontend)**  y este mismo se ha podido usar del lado del servidor gracias **Node.js** el cual es un entorno de ejecución del lado del servidor.
 
 Para poder trabajar con Node, es necesario ir implementando modulos según nuestro proyecto lo requiera, es ahí donde entra **npm**.
